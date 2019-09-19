@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 /**
  * main - Entry point
  *
@@ -6,14 +8,16 @@
  */
 int main(void)
 {
-char n;
-for (n = '0'; n <= '9'; n++)
+int n;
+for (n='0'; n <= '9'; n++)
 {
 putchar(n);
+if (n != '9')
+{
 putchar(',');
 putchar(' ');
+}
 }
 putchar('\n');
 return (0);
 }
-
