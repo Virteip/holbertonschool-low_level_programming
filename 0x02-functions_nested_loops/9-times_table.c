@@ -18,7 +18,7 @@ void times_table(void)
 			{
 				if (b > 0)
 				{
-			_putchar (' ');
+				_putchar (' ');
 				}
 			_putchar ((mult % 10) + '0');
 			}
