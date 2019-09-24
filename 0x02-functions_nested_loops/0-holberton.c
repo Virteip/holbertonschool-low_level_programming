@@ -7,9 +7,9 @@
 int main(void)
 {
 	int i;
-	char hol[9] = "Holberton";
+	char hol[10] = "Holberton";
 
-	for (i = 0 ; i <= 9 ; i++)
+	for (i = 0 ; i < 10 ; i++)
 	{
 	_putchar (hol[i]);
 	}
