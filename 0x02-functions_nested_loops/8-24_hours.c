@@ -1,13 +1,12 @@
 #include "holberton.h"
-
 /**
-* main - check the code for Holberton School students.
+* jack_bauer - check the code for Holberton School students.
 *
-* Return: Always 0.
+* Return: Always.
 **/
 void jack_bauer(void)
 {
-int c,d;
+int c, d;
 
 	for (c = 0; c <= 23; c++)
 	{
