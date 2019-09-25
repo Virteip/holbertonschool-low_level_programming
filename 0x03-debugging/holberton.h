@@ -12,3 +12,8 @@ void positive_or_negative(int i);
 #define LARGEST_H
 int largest_number(int a,int b,int c);
 #endif /*HOLBERTON*/
+
+#ifndef LEAP_H
+#define LEAP_H
+void print_remaining_days(int month, int day, int year);
+#endif
