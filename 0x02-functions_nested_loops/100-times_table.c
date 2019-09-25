@@ -7,7 +7,7 @@
 void print_times_table(int n)
 {
 	int a, b, mult;
-		
+
 if (n < 15 && n >= 0)
 {
 	for (a = 0; a <= n; a++)
@@ -24,7 +24,7 @@ if (n < 15 && n >= 0)
 				_putchar (' ');
 				_putchar (' ');
 				_putchar (' ');	}
-			_putchar ((mult % 10)+'0');	}
+			_putchar ((mult % 10) + '0');	}
 			else if (mult >= 10 && mult <= 99)
 			{
 				if (b != 0)
@@ -41,7 +41,7 @@ if (n < 15 && n >= 0)
 				_putchar (',');
 				_putchar (' ');	}
 			_putchar ((mult / 100) + '0');
-			_putchar (((mult / 10)%10) + '0');
+			_putchar (((mult / 10) % 10) + '0');
 			_putchar ((mult % 10) + '0');	}	}
 _putchar ('\n');	}	}
 
