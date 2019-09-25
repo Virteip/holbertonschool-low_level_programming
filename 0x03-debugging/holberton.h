@@ -17,3 +17,8 @@ int largest_number(int a,int b,int c);
 #define LEAP_H
 int convert_day(int month, int day);
 #endif
+
+#ifndef LEAP2_H
+#define LEAP2_H
+void print_remaining_days(int month, int day, int year);
+#endif
