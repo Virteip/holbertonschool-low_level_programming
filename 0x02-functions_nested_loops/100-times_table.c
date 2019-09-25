@@ -8,7 +8,7 @@ void print_times_table(int n)
 {
 	int a, b, mult;
 		
-if (n < 15 && n > 0)
+if (n < 15 && n >= 0)
 {
 	for (a = 0; a <= n; a++)
 	{
@@ -18,42 +18,31 @@ if (n < 15 && n > 0)
 
 			if (mult < 10)
 			{
-			_putchar ((mult % 10) + '0');
-			}
-			else if (mult >= 10 && mult <=99)
+				if (b != 0)
+				{
+				_putchar (',');
+				_putchar (' ');
+				_putchar (' ');
+				_putchar (' ');	}
+			_putchar ((mult % 10)+'0');	}
+			else if (mult >= 10 && mult <= 99)
 			{
+				if (b != 0)
+				{
+				_putchar (',');
+				_putchar (' ');
+				_putchar (' ');	}
 			_putchar ((mult / 10) + '0');
-			_putchar ((mult % 10) + '0');
-			}
+			_putchar ((mult % 10) + '0');	}
 			else if (mult >= 100)
 			{
+				if (b != 0)
+				{
+				_putchar (',');
+				_putchar (' ');	}
 			_putchar ((mult / 100) + '0');
-			_putchar ((mult / 10) + '0');
-			_putchar ((mult % 10) + '0');
-			}
-			if (b != n && b < 10)
-			{
-			_putchar (',');
-			_putchar (' ');
-			_putchar (' ');
-			_putchar (' ');
-			}
-			else if (b != n && b >= 10 && b <= 99 ) 
-			{
-			_putchar (',');
-			_putchar (' ');
-			_putchar (' ');
-			}
-			else if (b != n && b >= 100)
-			{
-			_putchar (',');
-			_putchar (' ');
-			}
-		}
-_putchar ('\n');
-	}
-} else {
-	
-}
+			_putchar (((mult / 10)%10) + '0');
+			_putchar ((mult % 10) + '0');	}	}
+_putchar ('\n');	}	}
 
 }
