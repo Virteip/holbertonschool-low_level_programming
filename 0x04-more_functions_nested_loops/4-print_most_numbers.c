@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* print_numbers - check the code for Holberton School students.
+* print_most_numbers - check the code for Holberton School students.
 *
 * Return: Void.
 */
@@ -10,7 +10,7 @@ void print_most_numbers(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		if ( i != 2 && i != 4)
+		if (i != 2 && i != 4)
 		{
 		_putchar (i + '0');
 		}
