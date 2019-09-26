@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* print_numbers - check the code for Holberton School students.
+* main - check the code for Holberton School students.
 *
 * Return: Always.
 */
@@ -9,28 +9,28 @@ int main(void)
 	int i;
 
 	for (i = 1; i <= 100; i++)
-	{	
-		int mod5 = i%5;
-		int mod3 = i%3;
+	{
+		int mod5 = i % 5;
+		int mod3 = i % 3;
 
 		if (mod5 == 0 && mod3 != 0)
 		{
-		printf ("Buzz");
+		printf("Buzz");
 		}
 
 		if (mod3 == 0 && mod5 != 0)
 		{
-		printf ("Fizz");
+		printf("Fizz");
 		}
 
 		if (mod3 == 0 && mod5 == 0)
 		{
-		printf ("FizzBuzz");
+		printf("FizzBuzz");
 		}
 
 		if ((mod3 != 0) && (mod5 != 0))
 		{
-		printf("%d",i);
+		printf("%d", i);
 		}
 
 		if (i != 100)
