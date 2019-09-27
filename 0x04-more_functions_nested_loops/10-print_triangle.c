@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* print_triangle- check the code for Holberton School students.
+* print_triangle - check the code for Holberton School students.
 *@size: integer.
 * Return: Void.
 */
@@ -29,5 +29,4 @@ void print_triangle(int size)
 		}
 
 	}
-_putchar('\n');
 }
