@@ -12,7 +12,7 @@ long factor = numero;
 
 while (factor > 1)
 {
-	if ((factor % a) == 0)
+	if ((factor % divisor) == 0)
 	{
 		factor /= divisor;
 	}
