@@ -19,7 +19,10 @@ void print_rev(char *s)
 
 	for (arrayNum = i; arrayNum >= 0; arrayNum--)
 	{
+	if (arrayNum != i)
+	{
 	_putchar(*s);
+	}
 	s--;
 	}
 
