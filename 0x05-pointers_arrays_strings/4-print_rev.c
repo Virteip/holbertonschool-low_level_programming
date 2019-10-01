@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-  * modif_my_param - set the integer to 402
+  * print_rev - set the integer to 402
   * @s: a pointer the integer we want to set to 402
   *
   * Return: int
