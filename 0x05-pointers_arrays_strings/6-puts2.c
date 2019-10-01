@@ -21,11 +21,6 @@ void puts2(char *str)
 	if (mod == 0)
 	{
 	_putchar (str[b]);
-		if (b >= 10)
-		{
-		_putchar((str[b] / 10) + '0');
-		_putchar((str[b] % 10) + '0');
-		}
 	}
 	b = b + 1;
 	mod = b % 2;
