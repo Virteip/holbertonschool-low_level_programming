@@ -14,15 +14,11 @@ void puts2(char *str)
 	{
 		g++;
 	}
-	
+
 	b = 0;
 	while (b != g)
 	{
-	int mod = b%2;
-		if (mod == 0)
-		{
-		_putchar(str[b]);
-		}
+	_putchar(str[b]);
 	b = b + 2;
 	}
 	_putchar('\n');
