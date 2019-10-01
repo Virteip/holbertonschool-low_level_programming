@@ -7,7 +7,7 @@
 */
 void puts2(char *str)
 {
-	int g, b;
+	int g, b, mod;
 
 	g = 0;
 	while (str[g] != '\0')
@@ -18,13 +18,17 @@ void puts2(char *str)
 	b = 0;
 	while (b != g)
 	{
+	if (mod == 0)
+	{
 	_putchar (str[b]);
 		if (b >= 10)
 		{
 		_putchar((str[b] / 10) + '0');
 		_putchar((str[b] % 10) + '0');
 		}
-	b = b + 2;
+	}
+	b = b + 1;
+	mod = b % 2;
 	}
 	_putchar('\n');
 }
