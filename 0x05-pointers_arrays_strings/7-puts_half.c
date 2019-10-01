@@ -21,6 +21,7 @@ void puts_half(char *str)
 
 	if (halfmod == 0)
 	{
+		g--;
 		while (half <= g)
 		{
 		_putchar(str[half]);
@@ -31,6 +32,7 @@ void puts_half(char *str)
 	{
 		n = (g - 1) / 2;
 		n++;
+		g--;
 		while (n <= g)
 		{
 		_putchar(str[n]);
