@@ -31,7 +31,8 @@ void puts_half(char *str)
 	{
 		n = (length_of_the_string - 1) / 2;
 		n = n + 1;
-		while (n <= g  )
+		length_of_the_string = length_of_the_string - 1;
+		while (n <= length_of_the_string)
 		{
 		_putchar(str[n]);
 		n++;
