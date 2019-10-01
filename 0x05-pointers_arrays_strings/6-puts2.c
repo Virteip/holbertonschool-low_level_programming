@@ -18,7 +18,12 @@ void puts2(char *str)
 	b = 0;
 	while (b != g)
 	{
-	_putchar(str[b]);
+	_putchar (str[b]);
+		if (b >= 10)
+		{
+		_putchar((str[b] / 10) + '0');
+		_putchar((str[b] % 10) + '0');
+		}
 	b = b + 2;
 	}
 	_putchar('\n');
