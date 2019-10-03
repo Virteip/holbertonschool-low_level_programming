@@ -11,7 +11,9 @@ int _strcmp(char *s1, char *s2)
 	int pos;
 	int res;
 
-	for (pos = 0; pos != '\0'; pos++)
+
+
+	for (pos = 0; (s2[pos] != '\0' && s1[pos] != '\0') && s1 == s2; pos++)
 	{
 		*s2 += s1[pos];
 		*s1 += s2[pos];
