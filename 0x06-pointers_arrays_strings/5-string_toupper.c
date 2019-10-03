@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * string_toupper - count the characters on a string
- * @char*: a pointer the integer we want to set to 402
+ * @c: a pointer the integer we want to set to 402
  *
  *
  * Return: char
