@@ -13,8 +13,8 @@ int _strcmp(char *s1, char *s2)
 
 	for (pos = 0; pos != '\0'; pos++)
 	{
-		s2 += s1[pos];
-		s1 += s2[pos];
+		*s2 += s1[pos];
+		*s1 += s2[pos];
 	}
 
 	res = *s1 - *s2;
