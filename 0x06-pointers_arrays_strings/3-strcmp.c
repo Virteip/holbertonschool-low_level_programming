@@ -9,20 +9,19 @@
 int _strcmp(char *s1, char *s2)
 {
 	int pos;
-	int res;
 
 
 	if (*s1 == *s2)
 	{
 		return (0);
 	}
+
 	for (pos = 0; (s2[pos] != '\0' && s1[pos] != '\0') && s1 == s2; pos++)
 	{
 		*s2 += s1[pos];
 		*s1 += s2[pos];
 	}
 
-	res = *s1 - *s2;
 
-	return (res);
+	return (*s1 - *s2);
 }
