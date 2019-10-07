@@ -23,8 +23,11 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		  k++;
 		}
-
+		if (!accept[j])
+		{
+			break;
+		}
 	}
 
-	return (k);
+	return (j);
 }
