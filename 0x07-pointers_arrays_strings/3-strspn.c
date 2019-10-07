@@ -1,26 +1,23 @@
 #include "holberton.h"
 /**
- * _strspn - prints buffer in hexa
- * @accept: the address of memory to print
- * @s: the size of the memory to print
- *
- *
- * Return: Nothing.
+ * _strspn - Prints matching bytes.
+ * @s:  the contain of the variable in reverse
+ * @accept: character
+ * Return: unsigned.
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int j, k;
+	unsigned int si, cj;
 
-	for (j = 0; s[j] != '\0'; j++)
+	for (si = 0; s[si] != '\0'; si++)
 	{
-		for (k = 0; accept[k] != '\0'; k++)
+		for (cj = 0; accept[cj] != '\0'; cj++)
 		{
-			if (accept[k] == s[j])
+			if (accept[cj] == s[si])
 				break;
 		}
-		if (!accept[j])
+		if (!accept[cj])
 			break;
 	}
-
-	return (j);
+	return (si);
 }
