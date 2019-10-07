@@ -26,5 +26,10 @@ char *_strchr(char *s, char c)
 			break;
 		}
 	}
-	return (NULL);
+
+	if (i == c)
+	{
+		return (NULL);
+	}
+	return (s);
 }
