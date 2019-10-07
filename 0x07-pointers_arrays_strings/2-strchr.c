@@ -25,10 +25,5 @@ char *_strchr(char *s, char c)
 			break;
 		}
 	}
-
-	if (i == c)
-	{
-		return (NULL);
-	}
-	return (s);
+return (0);
 }
