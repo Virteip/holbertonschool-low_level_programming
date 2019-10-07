@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * _strchr - prints buffer in hexa
  * @c: the address of memory to print
