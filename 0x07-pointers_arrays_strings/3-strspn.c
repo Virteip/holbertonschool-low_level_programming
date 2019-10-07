@@ -10,27 +10,18 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j, k, n;
+	unsigned int j, k;
 
-	i = 0;
-	n = 0;
-	while ((*s <= 122 && *s >= 97) || (*s <= 90 && *s >= 65))
-	{
-		s++;
-		n++;
-	}
-
-	i = 0;
-	for (j = 0; j < n; ++j)
+	for (j = 0; s[j] != '\0'; j++)
 	{
 		k = 0;
-		while (k < n)
+		while (accept[k] != '\0')
 		{
-			if (accept[j] == s[k])
+			if (accept[k] == s[j])
 			{
-				i++;
+				break;
 			}
-				k++;
+		  k++;
 		}
 
 	}
