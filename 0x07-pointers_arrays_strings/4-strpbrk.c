@@ -1,25 +1,24 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * _strpbrk - prints buffer in hexa
  * @accept: the address of memory to print
- * @s: the size of the memory to print
- *
- *
- * Return: Nothing.
+ * @s: char
+ * Return: NULL
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j;
+	int j;
 
-	for (i = 0; i < '0'; ++i)
+	for (; *s != '\0'; s++)
 	{
-		for (j = 0; j < '0'; j++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (s[i] == accept[j])
+			if (*s == accept[j])
 			{
-				return (s + i);
+				return (s);
 			}
 		}
 	}
-	return ('\0');
+	return (NULL);
 }
