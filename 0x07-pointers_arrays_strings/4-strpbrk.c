@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * _strpbrk - prints buffer in hexa
  * @accept: the address of memory to print
@@ -20,6 +21,7 @@ char *_strpbrk(char *s, char *accept)
 			{
 				s = &p[i];
 				return (s);
+				break;
 			}
 		}
 	}
