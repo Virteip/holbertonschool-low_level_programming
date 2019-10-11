@@ -9,33 +9,31 @@ int check(char *s)
 	{
 		if(s[i] < 48 || s[i] > 97)
 		{
-			return (0);
+			return (1);
 		}
 	}
-	return(1);
+	return(0);
 }
-
 
 int main (int argc, char *argv[])
 {
 	int i,r;
-	int check = 0;
 
 	for (i = 0; i < argc; i++)
 	{
-		if (check == 1)
+		if (check(*argv) == 1)
 		{
 			for (i = 1; i < argc; i++)
 			{
 				r += atoi(argv[i]);
 			}
 		}
-		else
+		else if (check(*argv) == 0)
 		{
 			puts("Error");
 			return (1);
 		}
 	}
-		printf("%i",r);
+		printf("%i \n",r);
 		return (r);
 }
