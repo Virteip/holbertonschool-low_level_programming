@@ -11,18 +11,14 @@
  */
 int main(int argc, char *argv[])
 {
-	int res;
-
-	if (argc - 1 < 2)
+	if (argc == 3)
+	{
+		printf("%d \n", atoi(argv[1]) * atoi(argv[2]));
+		return (0);
+	}
+	else
 	{
 		printf("Error \n");
 		return (1);
 	}
-	else
-	{
-		res = atoi(argv[1]) * atoi(argv[2]);
-		printf("%d \n", res);
-	}
-
-	return (0);
 }
