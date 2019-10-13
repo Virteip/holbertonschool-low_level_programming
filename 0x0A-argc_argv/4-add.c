@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "holberton.h"
 /**
  * main - prints buffer in hexa
  * @argc: argument count
