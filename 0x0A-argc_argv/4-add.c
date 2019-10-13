@@ -12,8 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int i, res;
-
-	if (argc == 1)
+	if (argc == 0)
 	{
 		printf("0 \n");
 		return (1);
