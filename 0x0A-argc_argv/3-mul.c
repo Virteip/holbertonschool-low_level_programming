@@ -13,11 +13,11 @@ int main(int argc, char *argv[])
 {
 	int res;
 
-	if (argc - 1 > 1)
+	if (argc > 2)
 	{
 		res = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d \n", res);
-		return (res);
+		return (0);
 	}
 
 	puts("Error");
