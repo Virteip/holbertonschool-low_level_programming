@@ -11,8 +11,10 @@
  */
 int main(int argc, char *argv[])
 {
-	int res;
+	int res, e;
 	(void)argc;
+
+	e = 0;
 
 	if (argc == 3)
 	{
@@ -22,7 +24,6 @@ int main(int argc, char *argv[])
 	else
 	{
 		puts("Error");
-		return (1);
 	}
-	return (0);
+	return (e);
 }
