@@ -1,3 +1,4 @@
+#include "holberton.h"
 #include <stdio.h>
 /**
  * main - prints buffer in hexa
@@ -9,9 +10,9 @@
  */
 int main(int argc, char *argv[])
 {
+
 	(void) argv;
 
-	printf("%i \n", argc - 1);
-
+	printf("%d\n", argc - 1);
 	return (0);
 }

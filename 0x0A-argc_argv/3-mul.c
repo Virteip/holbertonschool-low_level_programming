@@ -1,17 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "holberton.h"
 /**
- * main - prints buffer in hexa
+ * main - main function
  * @argc: argument count
  * @argv: argument value
  *
  *
- * Return: Nothing.
+ * Return: 0 if success and print answer.
  */
 int main(int argc, char *argv[])
 {
-	int res;
+	(void)argc;
 
+<<<<<<< HEAD
 	if (argc == 3)
 	{
 		res = atoi(argv[1]) * atoi(argv[2]);
@@ -23,4 +25,16 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	return (0);
+=======
+	if (argv[1] && argv[2])
+	{
+		printf("%d \n", atoi(argv[1]) * atoi(argv[2]));
+		return (0);
+	}
+	else
+	{
+		printf("Error \n");
+		return (1);
+	}
+>>>>>>> 7c88fa842555254642e6b82fb715e0b63cafd0d2
 }

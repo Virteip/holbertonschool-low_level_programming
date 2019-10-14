@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - prints buffer in hexa
  * @argc: argument count
@@ -9,9 +10,17 @@
  */
 int main(int argc, char *argv[])
 {
-	(void)argc;
+	int res;
 
-	printf("%s\n", argv[0]);
-
+	if (argc == 3)
+	{
+		res = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d \n", res);
+	}
+	else
+	{
+		puts("Error");
+		return (1);
+	}
 	return (0);
 }

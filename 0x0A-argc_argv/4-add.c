@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "holberton.h"
 /**
  * main - prints buffer in hexa
  * @argc: argument count
@@ -10,7 +11,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, r;
+	int i, res;
 
 	if (argc == 0)
 	{
@@ -21,9 +22,9 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (*argv[i] > 48 && *argv[i] < 57)
+			if (*argv[i] >= 48 && *argv[i] <= 57)
 			{
-				r += atoi(argv[i]);
+				res += atoi(argv[i]);
 			}
 			else
 			{
@@ -31,7 +32,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		printf("%i \n", r);
+		printf("%i \n", res);
 	}
 	return (0);
 }
