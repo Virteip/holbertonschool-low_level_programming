@@ -29,7 +29,7 @@ char *_strdup(char *str)
 	int i = 0;
 	int length = _strlen_recursion(str);
 
-	array = malloc(sizeof(char));
+	array = malloc(sizeof(char) * length);
 
 	if (array != NULL)
 	{
