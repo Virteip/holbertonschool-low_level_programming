@@ -36,9 +36,12 @@ char *str_concat(char *s1, char *s2)
 		array[i] = s1[i];
 
 	i2 = 0;
+
 	for (; i != l1 + l2; i++)
+	{
 		array[i] = s2[i2];
 		i2++;
+	}
 
 	return (array);
 }
