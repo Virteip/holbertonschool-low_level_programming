@@ -34,12 +34,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	length = _strlen_recursion(str);
-
-	if (length == 0)
-	{
-		return (NULL);
-	}
+	length = _strlen_recursion(str) - 1;
 
 	array = malloc(sizeof(char) * length);
 
