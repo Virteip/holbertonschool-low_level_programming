@@ -26,7 +26,7 @@ int _strlen_recursion(char *s)
 char *_strdup(char *str)
 {
 	char *array;
-	int i = 0;
+	int i = 1;
 	int length = _strlen_recursion(str);
 
 	array = malloc(sizeof(char) * length);
