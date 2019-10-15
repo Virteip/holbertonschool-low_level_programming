@@ -36,6 +36,11 @@ char *_strdup(char *str)
 
 	length = _strlen_recursion(str);
 
+	if (length == 0)
+	{
+		return (NULL);
+	}
+
 	array = malloc(sizeof(char) * length);
 
 	if (array == NULL)
