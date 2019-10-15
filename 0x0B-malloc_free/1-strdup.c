@@ -26,22 +26,22 @@ int _strlen_recursion(char *s)
 char *_strdup(char *str)
 {
 	char *array;
-	int i = 1;
-	int length = _strlen_recursion(str);
+	int i = 0;
+	int length;
 
-	array = malloc(sizeof(char) * length);
-
-	if ((array != NULL) && (length != 0))
-	{
-		while (i < length)
-		{
-			array[i] = str[i];
-			i++;
-		}
-		return (array);
-	}
-	else
+	if (str == NULL)
 	{
 		return (NULL);
 	}
+
+	length = _strlen_recursion(str);
+
+	array = malloc(sizeof(char) * length);
+
+	while (i < length)
+	{
+		array[i] = str[i];
+		i++;
+	}
+	return (array);
 }
