@@ -69,8 +69,6 @@ char *concat(int c, char **s)
  */
 char *argstostr(int ac, char **av)
 {
-	char res = concat(ac, av);
-
 	if (ac == 0 || av == '\0')
 	{
 		return (NULL);
