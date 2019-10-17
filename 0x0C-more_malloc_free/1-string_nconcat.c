@@ -29,15 +29,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		if (array == NULL)
 			return (NULL);
 
-		for (i = 0; i != l1; i++)
-			array[i] = s1[i];
-
-		i2 = 0;
-
-		for (; i != l1 + n; i++)
+		for (i = 0, i2 = 0; i < (l1 + n + 1); i++)
 		{
-			array[i] = s2[i2];
-			i2++;
+			if (i < l1)
+			{
+				array[i] = s1[i];
+			}
+			else
+			{
+				array[i] = s2[i2++];
+			}
 		}
 
 		return (array);
