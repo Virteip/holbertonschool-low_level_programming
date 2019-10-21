@@ -1,5 +1,5 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef __DOG_H__
+#define __DOG_H__
 
 int _putchar(char c);
 
