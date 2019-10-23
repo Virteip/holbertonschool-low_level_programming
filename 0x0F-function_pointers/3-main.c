@@ -28,13 +28,6 @@ int main(int argc, char **argv)
 		return (99);
 	}
 
-	if ((argv[2][0] == '/' && atoi(argv[3]) == 0) ||
-	    (argv[2][0] == '%' && atoi(argv[3]) == 0))
-	{
-		printf("Error\n");
-		return (100);
-	}
-
 		inta = atoi(argv[1]);
 		intb = atoi(argv[3]);
 
