@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 
 	if (argc != 4)
 	{
-		puts("Error");
+		printf("Error\n");
 		return (98);
 	}
 
@@ -24,14 +24,14 @@ int main(int argc, char **argv)
 
 	if (f == NULL)
 	{
-		puts("Error");
+		printf("Error\n");
 		return (99);
 	}
 
 	if ((argv[2][0] == '/' && atoi(argv[3]) == 0) ||
 	    (argv[2][0] == '%' && atoi(argv[3]) == 0))
 	{
-		puts("Error");
+		printf("Error\n");
 		return (100);
 	}
 
