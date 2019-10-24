@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include "3-calc.h"
 /**
@@ -26,6 +27,13 @@ int main(int argc, char **argv)
 	{
 		printf("Error\n");
 		return (99);
+	}
+
+	if ((argv[2][0] != '+' && argv[2][0] != '-' && argv[2][0] != '/' &&
+	      argv[2][0] != '*' && argv[2][0] != '%') || strlen(argv[2]) != 1)
+	{
+		printf("Error\n");
+		exit(99);
 	}
 
 		inta = atoi(argv[1]);
