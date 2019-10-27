@@ -28,12 +28,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 				printf("%s", tmp);
 
 			else
-				puts("(nil)");
+				printf("(nil)");
 
 			if ((i < n - 1) && separator)
 				printf("%s", separator);
 		}
-		va_end(args);
 	}
+	va_end(args);
 	printf("\n");
 }
