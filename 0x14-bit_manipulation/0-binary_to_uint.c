@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  * binary_to_uint - check the code for Holberton School students.
  * @b: string of binary
@@ -6,23 +7,31 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int decimal;
+	unsigned int decimal, i, j;
+
+	if (b == NULL)
+	{
+		return (0);
+	}
+
+	j = 0;
+	while (b[j])
+	{
+		j++;
+	}
+	j--;
+
 
 	decimal = 0;
-
-	for (; *b != '\0'; b++)
+	for (i = 0; b[i]; i++, j--)
 	{
-		if (*b == '1')
+		if (b[i] != '0' && b[i] != '1')
 		{
-			decimal = (decimal << 1) | 1;
-		}
-		else if (*b == '0')
-		{
-			decimal = decimal << 1;
+			return (0);
 		}
 		else
 		{
-			return (0);
+			decimal += (b[i] - '0') << j;
 		}
 	}
 
