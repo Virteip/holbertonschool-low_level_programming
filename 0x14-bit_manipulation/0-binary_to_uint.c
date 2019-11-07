@@ -8,7 +8,9 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int decimal;
 
-	for (decimal = 0; *b != '\0'; b++)
+	decimal = 0;
+
+	for (; *b != '\0'; b++)
 	{
 		if (*b == '1')
 		{
@@ -16,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else if (*b == '0')
 		{
-			decimal <<= 1;
+			decimal = decimal << 1;
 		}
 		else
 		{
