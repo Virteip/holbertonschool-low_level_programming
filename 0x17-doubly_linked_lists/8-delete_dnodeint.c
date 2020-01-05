@@ -40,7 +40,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		nnhead->next = newhead->next;
 		hattrick = newhead->next;
 		if (hattrick)
-			tmp3->prev = nnhead;
+			hattrick->prev = nnhead;
 		free(newhead);
 		return (1); }
 	return (-1); }
