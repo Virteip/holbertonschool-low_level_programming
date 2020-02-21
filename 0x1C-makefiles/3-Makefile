@@ -10,7 +10,7 @@ all: $(OBJ)
 re: oclean all
 
 oclean:
-	$(RM) main.o holberton.o
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 
