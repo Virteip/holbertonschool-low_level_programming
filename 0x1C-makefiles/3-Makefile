@@ -7,7 +7,7 @@ RM= rm -f
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-re: fclean $(OBJ) 3-Makefile
+re: oclean $(OBJ) 3-Makefile
 	$(CC) $(OBJ) -o $(NAME)
 
 oclean:
