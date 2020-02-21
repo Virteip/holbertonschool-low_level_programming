@@ -1,0 +1,9 @@
+#This instruction compiles task #2
+CC= gcc
+SRC= *.c
+OBJ= *.o
+NAME= "holberton"
+all: $(OBJ)
+	gcc -o $(NAME) $(OBJ)
+convert: $(SRC)
+	gcc -c $(SRC)
