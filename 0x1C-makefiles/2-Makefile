@@ -1,6 +1,6 @@
 #This instruction compiles task #2
 CC= gcc
-SRC= $(wildcard *.c)
+SRC= main.c holberton.c
 OBJ= $(SRC:.c=.o)
 NAME= "holberton"
 all: $(OBJ)
