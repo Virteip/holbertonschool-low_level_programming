@@ -7,14 +7,13 @@ RM= rm -f
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-re: oclean $(OBJ) 3-Makefile
-	$(CC) $(OBJ) -o $(NAME)
+re: oclean all
 
 oclean:
 	$(RM) main.o holberton.o
 
 fclean:
-	$(RM) *~ *.o holberton
+	$(RM) *~ *.o $(NAME)
 
 clean:
-	$(RM) *~ holberton
+	$(RM) *~ $(NAME)
