@@ -7,7 +7,7 @@ RM= rm -f
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-re: fclean all
+re: oclean all
 
 oclean:
 	$(RM) main.o holberton.o
