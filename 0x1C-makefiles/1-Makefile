@@ -1,5 +1,5 @@
 #This instruction compiles task #1
 CC= gcc
-SRC= *.c
+SRC= main.c holberton.c
 all: $(SRC)
 	$(CC) $(SRC) -o holberton
