@@ -1,0 +1,20 @@
+#This instruction compiles task #3
+CC= gcc
+SRC= main.c holberton.c
+OBJ= $(SRC:.c=.o)
+NAME= holberton
+RM= rm -f
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+re: fclean $(OBJ) 3-Makefile
+	$(CC) $(OBJ) -o $(NAME)
+
+oclean:
+	$(RM) *.o
+
+fclean:
+	$(RM) *~ *.o holberton
+
+clean:
+	$(RM) *~ holberton
